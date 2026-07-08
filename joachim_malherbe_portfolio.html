@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joachim Malherbe — Instructional Designer | AI-Enabled Learning & Development</title>
+<meta name="description" content="Instructional Designer with 10+ years in eLearning, ILT and blended learning. Certified in AI. Built for Learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy-deep:#0A1826;
+  --navy:#0D2740;
+  --navy-mid:#15385A;
+  --gold:#E8B34A;
+  --gold-soft:#F2C063;
+  --teal:#4FA6C9;
+  --paper:#F7F9FB;
+  --ink:#1B2733;
+  --ink-soft:#4A5B6B;
+  --line:#DCE5EC;
+  --card:#FFFFFF;
+  --radius:14px;
+  --shadow:0 2px 10px rgba(13,39,64,.07),0 12px 32px rgba(13,39,64,.06);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px}
+.mono{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.15}
+a{color:var(--navy-mid)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(10,24,38,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(232,179,74,.25)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{color:#fff;font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.05rem;text-decoration:none}
+.brand span{color:var(--gold)}
+.navlinks{display:flex;gap:22px}
+.navlinks a{color:#C6D6E2;text-decoration:none;font-size:.85rem;font-weight:500}
+.navlinks a:hover,.navlinks a:focus-visible{color:var(--gold)}
+@media(max-width:760px){.navlinks{display:none}}
+
+/* ---------- hero ---------- */
+header{background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 55%,var(--navy-mid) 100%);color:#fff;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 85% 10%,rgba(232,179,74,.14),transparent 65%);pointer-events:none}
+.hero{padding:84px 0 72px;position:relative;z-index:1}
+.hero .mono{color:var(--gold);margin-bottom:18px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;color:#fff;margin-bottom:10px}
+.hero .tag{font-size:clamp(1.1rem,2.4vw,1.45rem);font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--gold-soft);margin-bottom:14px}
+.hero .sub{max-width:640px;color:#B9CDDD;margin-bottom:30px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:44px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--navy-deep)}
+.btn-line{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn-line:hover{border-color:var(--gold);color:var(--gold)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:720px}
+.stat{background:rgba(255,255,255,.06);border:1px solid rgba(232,179,74,.28);border-radius:var(--radius);padding:18px 20px}
+.stat b{display:block;font-family:'Fraunces',Georgia,serif;font-size:2rem;color:var(--gold)}
+.stat span{font-size:.8rem;color:#B9CDDD}
+@media(max-width:640px){.stats{grid-template-columns:1fr}}
+
+/* ---------- sections ---------- */
+section{padding:72px 0}
+section:nth-of-type(even){background:#fff}
+.sec-head{margin-bottom:38px}
+.sec-head .mono{color:var(--teal)}
+.sec-head h2{font-size:clamp(1.6rem,3.4vw,2.2rem);color:var(--navy);margin-top:8px}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g2,.g3{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+.card h3{font-size:1.05rem;color:var(--navy);margin-bottom:8px}
+.card p{font-size:.92rem;color:var(--ink-soft)}
+.icon{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,var(--navy),var(--navy-mid));color:var(--gold);font-size:1.15rem}
+
+/* ---------- learning-path timeline (signature) ---------- */
+.path{position:relative;padding-left:44px}
+.path::before{content:"";position:absolute;left:14px;top:6px;bottom:6px;border-left:3px dotted var(--teal);opacity:.55}
+.stop{position:relative;margin-bottom:40px}
+.stop:last-child{margin-bottom:0}
+.stop::before{content:"";position:absolute;left:-38px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(232,179,74,.22)}
+.stop .when{font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.1em;color:var(--teal);font-weight:500}
+.stop h3{font-size:1.15rem;color:var(--navy);margin:4px 0 2px}
+.stop .org{font-weight:600;color:var(--gold);filter:brightness(.78);font-size:.95rem;margin-bottom:10px}
+.stop ul{list-style:none}
+.stop li{position:relative;padding-left:20px;font-size:.92rem;color:var(--ink-soft);margin-bottom:7px}
+.stop li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+
+/* ---------- skills ---------- */
+.skillgroup{margin-bottom:26px}
+.skillgroup h3{font-size:.95rem;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.skillgroup h3::before{content:"";width:22px;height:3px;background:var(--gold);border-radius:2px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-size:.83rem;font-weight:500;color:var(--ink)}
+section:nth-of-type(even) .chip{background:var(--paper)}
+.chip.hot{border-color:var(--gold);background:rgba(232,179,74,.1);color:#7A5A17}
+
+/* ---------- certifications ---------- */
+.cert{display:flex;gap:16px;align-items:flex-start}
+.cert .badge{flex:none;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-mid));display:flex;align-items:center;justify-content:center;color:var(--gold);font-family:'Fraunces',Georgia,serif;font-weight:700}
+.cert h3{font-size:.98rem}
+.cert .meta{font-size:.8rem;color:var(--teal);font-weight:600;margin-bottom:6px}
+.cert .tags{font-size:.78rem;color:var(--ink-soft)}
+
+/* ---------- contact ---------- */
+.contact{background:linear-gradient(135deg,var(--navy-deep),var(--navy-mid));color:#fff;border-radius:20px;padding:52px 40px;text-align:center}
+.contact h2{color:#fff;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:10px}
+.contact p{color:#B9CDDD;max-width:560px;margin:0 auto 30px}
+.clinks{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+footer{background:var(--navy-deep);color:#7FA0B8;text-align:center;padding:26px 20px;font-size:.8rem}
+footer a{color:var(--gold);text-decoration:none}
+
+/* ---------- motion ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn:hover{transform:none}
+}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">J<span>M</span></a>
+    <div class="navlinks">
+      <a href="#why">Why hire me</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="wrap hero">
+    <div class="mono">Instructional Designer · Bucharest, Romania · Remote-ready</div>
+    <h1>Joachim Malherbe</h1>
+    <div class="tag">Certified in AI. Built for Learning.</div>
+    <p class="sub">10+ years designing eLearning, instructor-led, and blended learning for global organizations — currently building training content and learning paths for Microsoft's global support and delivery teams, accelerated by Microsoft Copilot and AI Agents.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="mailto:jacquesanamalherbe@gmail.com">✉ Email me</a>
+      <a class="btn btn-line" href="https://www.linkedin.com/in/joachim-malherbe" target="_blank" rel="noopener">in LinkedIn</a>
+      <a class="btn btn-line" href="https://wa.me/40756418500" target="_blank" rel="noopener">✆ WhatsApp</a>
+      <a class="btn btn-line" href="tel:+40756418500">☎ +40 756 418 500</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>+35%</b><span>Learner engagement — performance-based metrics &amp; data-driven optimization</span></div>
+      <div class="stat"><b>−25%</b><span>Training costs — blended learning models, British Airways account</span></div>
+      <div class="stat"><b>+20%</b><span>Learner performance — evidence-based instructional strategies</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="mono">Why hire me</div>
+      <h2>Learning that performs, not just publishes</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card reveal"><div class="icon">✦</div><h3>AI-credentialed, in practice</h3><p>Six Microsoft &amp; LinkedIn Learning certifications (2025–2026) — and daily, hands-on use of Microsoft Copilot and AI Agents to accelerate development, audit content quality, and automate version control. I also train stakeholders to use these tools themselves.</p></div>
+      <div class="card reveal"><div class="icon">▲</div><h3>Outcomes you can measure</h3><p>Every recent role carries a verified number: 35% engagement lift at Microsoft, 25% training-cost reduction on the British Airways account, 20% learner-performance gain in a regulated compliance environment.</p></div>
+      <div class="card reveal"><div class="icon">◉</div><h3>Full design lifecycle</h3><p>Needs analysis, storyboarding, development, assessments, accessibility review, and content lifecycle management — across eLearning, ILT, virtual, and blended formats, grounded in adult learning principles.</p></div>
+      <div class="card reveal"><div class="icon">⬡</div><h3>Global by default</h3><p>A decade training multicultural teams — 50+ nationalities at Norwegian Cruise Line, multinational client programs at IGT, and Microsoft's global audiences today. Cross-cultural delivery is my home turf, not a stretch.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="mono">Work experience</div>
+      <h2>The learning path so far</h2>
+    </div>
+    <div class="path">
+      <div class="stop reveal">
+        <div class="when">MAY 2025 — PRESENT</div>
+        <h3>Instructional Designer</h3>
+        <div class="org">Microsoft (via Allyis, a Tech Mahindra company) · Bucharest (Remote)</div>
+        <ul>
+          <li>Design, update, and maintain training content and learning paths for Microsoft support and delivery teams, partnering with SMEs and business stakeholders</li>
+          <li>Increased learner engagement by 35% through performance-based metrics and data-driven content optimization</li>
+          <li>Use AI, Microsoft Copilot, and AI Agents to accelerate development, analyze content quality, and automate version control; train stakeholders on AI-assisted workflows</li>
+          <li>Ensure all materials meet Microsoft accessibility and inclusive design standards; manage content lifecycle reviews</li>
+        </ul>
+      </div>
+      <div class="stop reveal">
+        <div class="when">2022 — MARCH 2025</div>
+        <h3>Lead Training Specialist</h3>
+        <div class="org">British Airways (via IGT Solutions) · Bucharest</div>
+        <ul>
+          <li>Managed training operations for the British Airways account — curriculum design, delivery schedules, and quality control across concurrent projects</li>
+          <li>Reduced training costs by 25% while improving retention through blended learning models</li>
+          <li>Translated business requirements into scalable instructor-led, virtual, and blended programs; built trainer protocols adopted as the account standard</li>
+          <li>Reported training metrics, participant progress, and content effectiveness to leadership</li>
+        </ul>
+      </div>
+      <div class="stop reveal">
+        <div class="when">2019 — MARCH 2023</div>
+        <h3>Training Specialist &amp; Instructor</h3>
+        <div class="org">888Sparkware · Bucharest</div>
+        <ul>
+          <li>Designed interactive eLearning for customer service and compliance training in a regulated gambling environment</li>
+          <li>Improved learner performance by 20% through evidence-based instructional strategies</li>
+          <li>Delivered classroom, virtual, and one-on-one training; built evaluation tools with QA and SMEs to stay aligned with regulatory change</li>
+        </ul>
+      </div>
+      <div class="stop reveal">
+        <div class="when">NOVEMBER 2010 — MARCH 2020</div>
+        <h3>Trainer &amp; Shift Manager</h3>
+        <div class="org">Norwegian Cruise Line · Global Operations</div>
+        <ul>
+          <li>Progressed from Casino Dealer to Pit Supervisor to Shift Manager while delivering onboarding, leadership, and customer service training to teams from 50+ nationalities</li>
+          <li>Developed leadership and customer service curricula that improved team efficiency and operational outcomes</li>
+          <li>Managed live operations — scheduling, staff performance evaluation, incident reporting — while coaching team members</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="mono">Impact &amp; achievements</div>
+      <h2>Numbers with names attached</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card reveal"><h3>35% engagement lift</h3><p>Built performance-based learning metrics and data-driven optimization across Microsoft's global learning paths.</p></div>
+      <div class="card reveal"><h3>25% cost reduction</h3><p>Designed and rolled out blended learning models for the British Airways training account while improving retention.</p></div>
+      <div class="card reveal"><h3>20% performance gain</h3><p>Rebuilt compliance and customer-service training around evidence-based strategies in a regulated environment.</p></div>
+      <div class="card reveal"><h3>Account quality standard</h3><p>Trainer protocols and documentation adopted as the operating baseline for consistency and delivery at IGT / British Airways.</p></div>
+      <div class="card reveal"><h3>AI capability building</h3><p>Trained business stakeholders to use Copilot and AI for writing, analysis, and instructional design workflows at Microsoft.</p></div>
+      <div class="card reveal"><h3>Leadership curricula at sea</h3><p>Leadership and customer-service programs delivered across a decade of global cruise operations, 50+ nationalities.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="mono">Skills dashboard</div>
+      <h2>What I work with</h2>
+    </div>
+    <div class="skillgroup reveal">
+      <h3>Instructional Design &amp; Delivery</h3>
+      <div class="chips"><span class="chip hot">Instructional Design</span><span class="chip">eLearning</span><span class="chip">ILT &amp; Virtual Training</span><span class="chip">Blended Learning</span><span class="chip">Adult Learning Principles</span><span class="chip">Storyboarding</span><span class="chip">Assessments &amp; Knowledge Checks</span><span class="chip">Accessibility &amp; Inclusive Design</span><span class="chip">Learning Path Management</span></div>
+    </div>
+    <div class="skillgroup reveal">
+      <h3>AI-Enabled Development</h3>
+      <div class="chips"><span class="chip hot">Microsoft 365 Copilot</span><span class="chip hot">AI Agents</span><span class="chip">AI-Assisted Content Development</span><span class="chip">AI Literacy Enablement</span><span class="chip">Responsible AI Awareness</span><span class="chip">Generative AI</span></div>
+    </div>
+    <div class="skillgroup reveal">
+      <h3>Project &amp; Stakeholder Management</h3>
+      <div class="chips"><span class="chip">Project Planning</span><span class="chip">SME Collaboration</span><span class="chip">Cross-Functional Coordination</span><span class="chip">Azure DevOps</span><span class="chip">KPI Tracking &amp; Reporting</span><span class="chip">Quality Assurance</span><span class="chip">Learning Needs Analysis</span><span class="chip">Content Lifecycle Management</span></div>
+    </div>
+    <div class="skillgroup reveal">
+      <h3>Tools &amp; Technologies</h3>
+      <div class="chips"><span class="chip hot">Articulate Storyline</span><span class="chip hot">Articulate Rise</span><span class="chip">LMS Platforms</span><span class="chip">Microsoft 365 (Teams, SharePoint, OneNote)</span><span class="chip">Canva</span><span class="chip">Camtasia</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="mono">Certifications · Microsoft &amp; LinkedIn Learning · 2025–2026</div>
+      <h2>Credentialed, recently, and on purpose</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card cert reveal"><div class="badge">C</div><div><h3>Microsoft 365 Copilot Essentials Professional Certificate</h3><div class="meta">Microsoft &amp; LinkedIn Learning · March 2026</div><div class="tags">Microsoft Copilot · AI Productivity · Artificial Intelligence</div></div></div>
+      <div class="card cert reveal"><div class="badge">M</div><div><h3>AI for Managers</h3><div class="meta">Microsoft &amp; LinkedIn Learning · March 2026</div><div class="tags">AI for Business · Cross-team Collaboration · AI Productivity</div></div></div>
+      <div class="card cert reveal"><div class="badge">G</div><div><h3>Generative AI for L&amp;D Professional Certificate</h3><div class="meta">LinkedIn Learning · January 2026</div><div class="tags">Organizational Leadership · AI for Business · Employee L&amp;D</div></div></div>
+      <div class="card cert reveal"><div class="badge">A</div><div><h3>Become an AI-Powered L&amp;D Professional</h3><div class="meta">LinkedIn Learning · January 2026</div><div class="tags">Organizational Leadership · Employee L&amp;D · Responsible AI</div></div></div>
+      <div class="card cert reveal"><div class="badge">P</div><div><h3>Career Essentials in Project Management</h3><div class="meta">Microsoft &amp; LinkedIn Learning · December 2025</div><div class="tags">Budget Development · Project Management · Project Communications</div></div></div>
+      <div class="card cert reveal"><div class="badge">B</div><div><h3>Build Your Generative AI Productivity Skills</h3><div class="meta">Microsoft &amp; LinkedIn Learning · November 2025</div><div class="tags">AI for Business · AI Productivity · Generative AI</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="mono">Education &amp; leadership</div>
+      <h2>Foundation and front line</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card reveal"><div class="icon">🎓</div><h3>Mini MBA — International Business Management Institute (IBMI)</h3><p>Modules: Strategy, Operations, Finance, Human Resources.</p></div>
+      <div class="card reveal"><div class="icon">⚑</div><h3>Leadership experience</h3><p>Shift Manager at Norwegian Cruise Line — managed staff scheduling, performance evaluation, and incident reporting while coaching teams from 50+ nationalities. Today: mentoring colleagues and leading knowledge-sharing on AI-assisted instructional design at Microsoft.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="goals">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="mono">Career goals</div>
+      <h2>Where I'm headed</h2>
+    </div>
+    <div class="card reveal">
+      <p style="font-size:1rem;color:var(--ink)">I'm building toward learning experiences where AI does the heavy lifting and designers do the thinking — measurable, accessible, and genuinely useful to the people taking them. I'm open to <strong>Instructional Designer</strong> and <strong>Corporate Trainer</strong> roles, remote or Europe-based, where AI-enabled L&amp;D is an ambition rather than an afterthought.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="contact reveal">
+      <div class="mono" style="color:var(--gold);margin-bottom:12px">Contact</div>
+      <h2>Let's build learning that performs</h2>
+      <p>Based in Bucharest, Romania. Remote-ready across Europe. Usually replies within one business day.</p>
+      <div class="clinks">
+        <a class="btn btn-gold" href="mailto:jacquesanamalherbe@gmail.com">✉ jacquesanamalherbe@gmail.com</a>
+        <a class="btn btn-line" href="tel:+40756418500">☎ +40 756 418 500</a>
+        <a class="btn btn-line" href="https://wa.me/40756418500" target="_blank" rel="noopener">✆ WhatsApp</a>
+        <a class="btn btn-line" href="https://www.linkedin.com/in/joachim-malherbe" target="_blank" rel="noopener">in linkedin.com/in/joachim-malherbe</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Joachim Malherbe · Instructional Designer · <a href="https://www.linkedin.com/in/joachim-malherbe" target="_blank" rel="noopener">LinkedIn</a> · Bucharest, Romania
+</footer>
+
+<script>
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
