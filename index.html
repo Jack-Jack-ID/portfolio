@@ -28,7 +28,7 @@
     <div style="max-width:1080px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:58px">
       <a href="#top" style="color:#fff;font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.05rem;text-decoration:none">J<span style="color:#E8B34A">M</span></a>
       <div style="display:flex;gap:22px">
-        <a href="#why" style="color:#C6D6E2;text-decoration:none;font-size:.85rem;font-weight:500">Why hire me</a>
+        <a href="#why" style="color:#C6D6E2;text-decoration:none;font-size:.85rem;font-weight:500">What I bring</a>
         <a href="#experience" style="color:#C6D6E2;text-decoration:none;font-size:.85rem;font-weight:500">Experience</a>
         <a href="#skills" style="color:#C6D6E2;text-decoration:none;font-size:.85rem;font-weight:500">Skills</a>
         <a href="#certs" style="color:#C6D6E2;text-decoration:none;font-size:.85rem;font-weight:500">Certifications</a>
@@ -57,23 +57,23 @@
           </sc-for>
         </svg>
         <sc-for list="{{ heroNodes }}" as="n" hint-placeholder-count="9">
-          <div style="position:absolute;white-space:nowrap;left:{{ n.iconLeftPct }}%;top:{{ n.iconTopPct }}%;transform:translate(-50%,-50%);font-size:{{ n.iconSize }}px;line-height:1;color:#0A1826;opacity:0.85;pointer-events:none">{{ n.icon }}</div>
-          <div style="position:absolute;white-space:nowrap;left:{{ n.labelLeftPct }}%;top:{{ n.labelTopPct }}%;transform:translateY(-50%);font-size:10.5px;color:#EAF1F6;opacity:0.88;font-family:'Inter',Arial,sans-serif">{{ n.label }}</div>
+          <div style="position:absolute;white-space:nowrap;left:{{ n.iconLeftPct }}%;top:{{ n.iconTopPct }}%;transform:translate(-50%,-50%);font-size:{{ n.iconSize }}px;line-height:1;color:#0A1826;opacity:{{ n.iconOpacity }}">{{ n.icon }}</div>
+          <div style="position:absolute;white-space:nowrap;left:{{ n.labelLeftPct }}%;top:{{ n.labelTopPct }}%;transform:translateY(-50%);font-size:10.5px;color:#EAF1F6;opacity:0.88;font-family:'Inter',sans-serif;font-weight:500">{{ n.label }}</div>
         </sc-for>
       </div>
       <div style="position:absolute;inset:0;background:linear-gradient(100deg,#0A1826 0%,#0A1826 26%,rgba(10,24,38,.55) 46%,transparent 68%)"></div>
     </div>
 
     <div style="max-width:1080px;margin:0 auto;padding:84px 24px 72px;position:relative;z-index:1">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#E8B34A;margin-bottom:18px;animation:fadeUp .6s ease both">Instructional Designer · Bucharest, Romania · Remote-ready</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#E8B34A;margin-bottom:18px;animation:fadeUp .6s ease both">Instructional Designer</div>
       <h1 style="font-family:'Fraunces',Georgia,serif;line-height:1.1;font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;color:#fff;margin:0 0 10px;animation:fadeUp .6s .05s ease both">Joachim Malherbe</h1>
-      <div style="font-size:clamp(1.1rem,2.4vw,1.45rem);font-family:'Fraunces',Georgia,serif;font-weight:600;color:#F2C063;margin-bottom:14px;animation:fadeUp .6s .1s ease both">Certified in AI. Built for Learning.</div>
-      <p style="max-width:600px;color:#B9CDDD;margin:0 0 30px;animation:fadeUp .6s .15s ease both">10+ years designing eLearning, instructor-led, and blended learning for global organizations — currently building training content and learning paths for Microsoft's global support and delivery teams, accelerated by Microsoft Copilot and AI Agents.</p>
+      <div style="font-size:clamp(1.1rem,2.4vw,1.45rem);font-family:'Fraunces',Georgia,serif;font-weight:600;color:#F2C063;margin-bottom:14px;animation:fadeUp .6s .1s ease both">Certified in AI. Built for results.</div>
+      <p style="max-width:600px;color:#B9CDDD;margin:0 0 30px;animation:fadeUp .6s .15s ease both">10+ years designing eLearning, instructor-led, and blended learning for global organizations — currently at Microsoft. AI-ready. Outcomes-driven.</p>
       <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:44px;animation:fadeUp .6s .2s ease both">
-        <a href="mailto:jacquesanamalherbe@gmail.com" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;background:#E8B34A;color:#0A1826" style-hover="transform:translateY(-2px)">✉ Email me</a>
-        <a href="https://www.linkedin.com/in/joachim-malherbe" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.4);color:#fff" style-hover="border-color:#E8B34A;color:#E8B34A;transform:translateY(-2px)">in LinkedIn</a>
-        <a href="https://wa.me/40756418500" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.4);color:#fff" style-hover="border-color:#E8B34A;color:#E8B34A;transform:translateY(-2px)">✆ WhatsApp</a>
-        <a href="tel:+40756418500" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.4);color:#fff" style-hover="border-color:#E8B34A;color:#E8B34A;transform:translateY(-2px)">☎ +40 756 418 500</a>
+        <a href="mailto:jacquesanamalherbe@gmail.com" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;background:#E8B34A;color:#0A1826">✉️ Email</a>
+        <a href="https://www.linkedin.com/in/joachim-malherbe" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;background:rgba(232,179,74,.12);color:#E8B34A;border:1.5px solid rgba(232,179,74,.4)">LinkedIn</a>
+        <a href="https://wa.me/40756418500" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;background:rgba(232,179,74,.12);color:#E8B34A;border:1.5px solid rgba(232,179,74,.4)">WhatsApp</a>
+        <a href="tel:+40756418500" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(232,179,74,.4);color:#C6D6E2">📞 +40 756 418 500</a>
       </div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:960px;animation:fadeUp .6s .25s ease both">
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(232,179,74,.28);border-radius:14px;padding:18px 20px">
@@ -88,7 +88,7 @@
           <b style="display:block;font-family:'Fraunces',Georgia,serif;font-size:2rem;color:#E8B34A">+20%</b>
           <span style="font-size:.8rem;color:#B9CDDD">Learner performance — evidence-based instructional strategies</span>
         </div>
-        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(232,179,74,.28);border-radius:14px;padding:0;transition:transform .15s ease,border-color .15s ease" style-hover="transform:translateY(-2px);border-color:#E8B34A">
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(232,179,74,.28);border-radius:14px;padding:0;transition:transform .15s ease,border-color .15s ease" style-hover="transform:translateY(-4px)">
           <a href="#archive" style="display:block;padding:18px 20px;text-decoration:none">
             <b style="display:block;font-family:'Fraunces',Georgia,serif;font-size:2rem;color:#E8B34A">400+</b>
             <span style="font-size:.8rem;color:#B9CDDD">Licenses &amp; certifications, 2022–2026 — search the archive ↓</span>
@@ -101,29 +101,29 @@
   <section id="why" style="padding:72px 0">
     <div style="max-width:1080px;margin:0 auto;padding:0 24px">
       <div style="margin-bottom:38px">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#4FA6C9">Why hire me</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#4FA6C9">What I bring to the team</div>
         <h2 style="font-family:'Fraunces',Georgia,serif;line-height:1.15;font-size:clamp(1.6rem,3.4vw,2.2rem);color:#0D2740;margin-top:8px">Learning that performs, not just publishes</h2>
       </div>
       <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
         <div style="background:#fff;border:1px solid #DCE5EC;border-radius:14px;padding:26px;box-shadow:0 2px 10px rgba(13,39,64,.07),0 12px 32px rgba(13,39,64,.06)">
-          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.15rem">✦</div>
+          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.4rem">✦</div>
           <h3 style="font-size:1.05rem;color:#0D2740;margin:0 0 8px">AI-credentialed, in practice</h3>
-          <p style="font-size:.92rem;color:#4A5B6B;margin:0">Six Microsoft &amp; LinkedIn Learning certifications (2025–2026) — and daily, hands-on use of Microsoft Copilot and AI Agents to accelerate development, audit content quality, and automate version control. I also train stakeholders to use these tools themselves.</p>
+          <p style="font-size:.92rem;color:#4A5B6B;margin:0">Six Microsoft &amp; LinkedIn Learning certifications (2025–2026) — and daily, hands-on use of Microsoft Copilot and AI Agents to accelerate design and content workflows.</p>
         </div>
         <div style="background:#fff;border:1px solid #DCE5EC;border-radius:14px;padding:26px;box-shadow:0 2px 10px rgba(13,39,64,.07),0 12px 32px rgba(13,39,64,.06)">
-          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.15rem">▲</div>
+          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.4rem">📊</div>
           <h3 style="font-size:1.05rem;color:#0D2740;margin:0 0 8px">Outcomes you can measure</h3>
-          <p style="font-size:.92rem;color:#4A5B6B;margin:0">Every recent role carries a verified number: 35% engagement lift at Microsoft, 25% training-cost reduction on the British Airways account, 20% learner-performance gain in a regulated compliance environment.</p>
+          <p style="font-size:.92rem;color:#4A5B6B;margin:0">Every recent role carries a verified number: 35% engagement lift at Microsoft, 25% training-cost reduction on the British Airways account, and 20% performance gains through evidence-based design.</p>
         </div>
         <div style="background:#fff;border:1px solid #DCE5EC;border-radius:14px;padding:26px;box-shadow:0 2px 10px rgba(13,39,64,.07),0 12px 32px rgba(13,39,64,.06)">
-          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.15rem">◉</div>
+          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.4rem">🎯</div>
           <h3 style="font-size:1.05rem;color:#0D2740;margin:0 0 8px">Full design lifecycle</h3>
-          <p style="font-size:.92rem;color:#4A5B6B;margin:0">Needs analysis, storyboarding, development, assessments, accessibility review, and content lifecycle management — across eLearning, ILT, virtual, and blended formats, grounded in adult learning principles.</p>
+          <p style="font-size:.92rem;color:#4A5B6B;margin:0">Needs analysis, storyboarding, development, assessments, accessibility review, and content lifecycle management — across eLearning, ILT, and blended modalities.</p>
         </div>
         <div style="background:#fff;border:1px solid #DCE5EC;border-radius:14px;padding:26px;box-shadow:0 2px 10px rgba(13,39,64,.07),0 12px 32px rgba(13,39,64,.06)">
-          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.15rem">⬡</div>
+          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.4rem">🌍</div>
           <h3 style="font-size:1.05rem;color:#0D2740;margin:0 0 8px">Global by default</h3>
-          <p style="font-size:.92rem;color:#4A5B6B;margin:0">A decade training multicultural teams — 50+ nationalities at Norwegian Cruise Line, multinational client programs at IGT, and Microsoft's global audiences today. Cross-cultural delivery is my home turf, not a stretch.</p>
+          <p style="font-size:.92rem;color:#4A5B6B;margin:0">A decade training multicultural teams — 50+ nationalities at Norwegian Cruise Line, multinational client programs at IGT, and Microsoft's borderless L&amp;D model.</p>
         </div>
       </div>
     </div>
@@ -184,7 +184,7 @@
           </h3>
           <div style="display:flex;flex-wrap:wrap;gap:9px">
             <sc-for list="{{ g.chips }}" as="c" hint-placeholder-count="6">
-              <span onClick="{{ c.onClick }}" title="See certifications for this skill" style="display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid #DCE5EC;border-radius:999px;padding:7px 15px;font-size:.83rem;font-weight:500;color:#1B2733;cursor:pointer;white-space:nowrap;transition:border-color .15s ease,transform .15s ease" style-hover="border-color:#E8B34A;transform:translateY(-2px)">
+              <span onClick="{{ c.onClick }}" title="See certifications for this skill" style="display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid #DCE5EC;border-radius:999px;padding:6px 12px;font-size:.82rem;color:#0D2740;cursor:pointer;transition:all .15s ease" style-hover="border-color:#E8B34A;background:#FDF9F3">
                 <sc-if value="{{ c.hot }}" hint-placeholder-val="{{ false }}">
                   <span style="width:6px;height:6px;border-radius:50%;background:#E8B34A;display:inline-block;flex:none"></span>
                 </sc-if>
@@ -206,7 +206,7 @@
       <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
         <sc-for list="{{ flagshipCerts }}" as="c" hint-placeholder-count="8">
           <div style="display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #DCE5EC;border-radius:14px;padding:26px;box-shadow:0 2px 10px rgba(13,39,64,.07),0 12px 32px rgba(13,39,64,.06)">
-            <div style="flex:none;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#0D2740,#15385A);display:flex;align-items:center;justify-content:center;color:#E8B34A;font-family:'Fraunces',Georgia,serif;font-weight:700">{{ c.badge }}</div>
+            <div style="flex:none;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#0D2740,#15385A);display:flex;align-items:center;justify-content:center;color:#E8B34A;font-weight:700;font-size:.85rem;text-align:center;flex-wrap:wrap">{{ c.badge }}</div>
             <div>
               <h3 style="font-size:.98rem;margin:0 0 6px;color:#0D2740">{{ c.title }}</h3>
               <div style="font-size:.8rem;color:#4FA6C9;font-weight:600;margin-bottom:6px">{{ c.meta }}</div>
@@ -215,7 +215,7 @@
           </div>
         </sc-for>
       </div>
-      <p style="margin-top:24px;font-size:.92rem;color:#4A5B6B">These eight are the credentials I lead with. They sit on top of a much deeper record — <a href="#archive" style="color:#15385A">400+ licenses and certifications</a> spanning AI, instructional design, project management, and more, earned 2022–2026.</p>
+      <p style="margin-top:24px;font-size:.92rem;color:#4A5B6B">These eight are the credentials I lead with. They sit on top of a much deeper record — <a href="#archive" style="color:#15385A">400+ licenses and certifications</a>, searchable below.</p>
     </div>
   </section>
 
@@ -224,18 +224,18 @@
       <div style="margin-bottom:38px">
         <div style="font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#E8B34A">The full archive</div>
         <h2 style="font-family:'Fraunces',Georgia,serif;line-height:1.15;font-size:clamp(1.6rem,3.4vw,2.2rem);color:#fff;margin-top:8px">400+ credentials, searchable</h2>
-        <p style="color:#B9CDDD;max-width:640px;margin-top:10px;font-size:.95rem">Every license and certification on my LinkedIn profile, 2022–2026. Search by keyword or filter by category — this is the receipts behind the six flagship credentials above.</p>
+        <p style="color:#B9CDDD;max-width:640px;margin-top:10px;font-size:.95rem">Every license and certification on my LinkedIn profile, 2022–2026. Search by keyword or filter by category — this list updates as I earn new qualifications.</p>
       </div>
 
       <div style="margin-bottom:28px">
-        <input type="text" value="{{ archiveQuery }}" onChange="{{ onArchiveSearchChange }}" placeholder="Search by title, issuer, or skill… (e.g. &quot;Copilot&quot;, &quot;Excel&quot;, &quot;Six Sigma&quot;)" autocomplete="off" style="width:100%;background:rgba(255,255,255,.07);border:1.5px solid rgba(232,179,74,.3);border-radius:999px;padding:14px 22px;font-size:.95rem;color:#fff;font-family:'Inter',Arial,sans-serif;margin-bottom:16px" />
-        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px">
+        <input type="text" value="{{ archiveQuery }}" onChange="{{ onArchiveSearchChange }}" placeholder="Search by title, issuer, or skill… (e.g. &quot;Copilot&quot;, &quot;Excel&quot;, &quot;Six Sigma&quot;)" style="width:100%;max-width:100%;padding:12px 16px;border:1px solid rgba(232,179,74,.3);border-radius:10px;background:rgba(255,255,255,.06);color:#fff;font-size:.9rem;font-family:inherit" style-focus="outline:none;border-color:#E8B34A;box-shadow:0 0 0 3px rgba(232,179,74,.2)">
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;margin-bottom:14px">
           <sc-for list="{{ archiveChips }}" as="chip" hint-placeholder-count="11">
             <sc-if value="{{ chip.active }}" hint-placeholder-val="{{ false }}">
-              <span onClick="{{ chip.onClick }}" style="background:#E8B34A;border:1px solid #E8B34A;border-radius:999px;padding:6px 14px;font-size:.78rem;font-weight:700;color:#0A1826;cursor:pointer;white-space:nowrap;flex-shrink:0">{{ chip.label }}</span>
+              <span onClick="{{ chip.onClick }}" style="background:#E8B34A;border:1px solid #E8B34A;border-radius:999px;padding:6px 14px;font-size:.78rem;font-weight:700;color:#0A1826;cursor:pointer;white-space:nowrap">{{ chip.label }}</span>
             </sc-if>
             <sc-if value="{{ !chip.active }}" hint-placeholder-val="{{ true }}">
-              <span onClick="{{ chip.onClick }}" style="background:rgba(255,255,255,.06);border:1px solid rgba(232,179,74,.25);border-radius:999px;padding:6px 14px;font-size:.78rem;font-weight:500;color:#C6D6E2;cursor:pointer;white-space:nowrap;flex-shrink:0" style-hover="border-color:#E8B34A">{{ chip.label }}</span>
+              <span onClick="{{ chip.onClick }}" style="background:rgba(255,255,255,.06);border:1px solid rgba(232,179,74,.25);border-radius:999px;padding:6px 14px;font-size:.78rem;font-weight:500;color:#C6D6E2;cursor:pointer;white-space:nowrap;transition:all .15s ease" style-hover="background:rgba(232,179,74,.15);border-color:#E8B34A">{{ chip.label }}</span>
             </sc-if>
           </sc-for>
         </div>
@@ -261,12 +261,12 @@
       <div style="margin-bottom:38px">
         <div style="font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#4FA6C9">How the skills connect</div>
         <h2 style="font-family:'Fraunces',Georgia,serif;line-height:1.15;font-size:clamp(1.6rem,3.4vw,2.2rem);color:#0D2740;margin-top:8px">Not a list. A network.</h2>
-        <p style="color:#4A5B6B;max-width:640px;margin-top:10px;font-size:.95rem">The 15 skills most evidenced across my certifications, sized by how many certifications back them. Click any card to see the credentials behind it — connections show skills that were certified together, real co-occurrence, not a claim.</p>
+        <p style="color:#4A5B6B;max-width:640px;margin-top:10px;font-size:.95rem">The 15 skills most evidenced across my certifications, sized by how many certifications back them. Click any card to see which credentials support that skill.</p>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:18px;margin-bottom:16px">
         <span style="display:flex;align-items:center;gap:7px;font-size:.8rem;color:#4A5B6B"><span style="width:10px;height:10px;border-radius:50%;background:#E8B34A;display:inline-block"></span>AI &amp; Generative AI</span>
-        <span style="display:flex;align-items:center;gap:7px;font-size:.8rem;color:#4A5B6B"><span style="width:10px;height:10px;border-radius:50%;background:#4FA6C9;display:inline-block"></span>Instructional Design &amp; L&amp;D</span>
-        <span style="display:flex;align-items:center;gap:7px;font-size:.8rem;color:#4A5B6B"><span style="width:10px;height:10px;border-radius:50%;background:#8B7FD6;display:inline-block"></span>Tools &amp; Platforms</span>
+        <span style="display:flex;align-items:center;gap:7px;font-size:.8rem;color:#4A5B6B"><span style="width:10px;height:10px;border-radius:50%;background:#4FA6C9;display:inline-block"></span>Instructional Design</span>
+        <span style="display:flex;align-items:center;gap:7px;font-size:.8rem;color:#4A5B6B"><span style="width:10px;height:10px;border-radius:50%;background:#8B7FD6;display:inline-block"></span>Tools &amp; Tech</span>
         <span style="display:flex;align-items:center;gap:7px;font-size:.8rem;color:#4A5B6B"><span style="width:10px;height:10px;border-radius:50%;background:#5DCAA5;display:inline-block"></span>Project Management</span>
       </div>
       <div style="display:flex;gap:0;align-items:stretch;background:#0A1826;border-radius:14px;overflow:hidden">
@@ -279,9 +279,9 @@
           <div style="position:relative;display:flex;flex-wrap:wrap;align-content:flex-start;gap:22px;padding:28px">
             <sc-for list="{{ mapNodesLive }}" as="n" hint-placeholder-count="15">
               <div ref="{{ n.setRef }}" onClick="{{ n.onClick }}" style="width:{{ n.w }}px;height:{{ n.h }}px;flex:none;cursor:pointer">
-                <div style="width:100%;height:100%;background:#fff;border-radius:10px;padding:8px 12px;display:flex;flex-direction:column;justify-content:center;gap:4px;box-sizing:border-box;border:{{ n.borderWidth }}px solid {{ n.borderColor }};box-shadow:{{ n.boxShadow }};animation:cardFloat {{ n.floatDuration }}s ease-in-out infinite;animation-delay:{{ n.floatDelay }}s">
+                <div style="width:100%;height:100%;background:#fff;border-radius:10px;padding:8px 12px;display:flex;flex-direction:column;justify-content:center;gap:4px;box-sizing:border-box;border:{{ n.borderWidth }}px solid {{ n.borderColor }};box-shadow:{{ n.boxShadow }};transition:all .2s ease;animation:cardFloat {{ n.floatDuration }}s ease-in-out infinite {{ n.floatDelay }}s">
                   <div style="display:flex;align-items:flex-start;gap:7px">
-                    <span style="flex:none;width:20px;height:20px;border-radius:6px;background:{{ n.color }};color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;margin-top:1px">{{ n.icon }}</span>
+                    <span style="flex:none;width:20px;height:20px;border-radius:6px;background:{{ n.color }};color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;margin-top:2px;font-weight:600">{{ n.icon }}</span>
                     <span style="flex:1;min-width:0;font-size:.76rem;font-weight:700;color:#0D2740;line-height:1.2;white-space:normal;overflow-wrap:break-word;overflow:hidden;max-height:2.4em">{{ n.label }}</span>
                   </div>
                   <div style="font-size:.72rem;font-family:'IBM Plex Mono',monospace;color:{{ n.color }};font-weight:600;padding-left:27px">{{ n.countLabel }}</div>
@@ -299,7 +299,7 @@
                 <h3 style="margin:0;font-size:1.05rem;color:#fff;font-family:'Fraunces',Georgia,serif">{{ skillPanelTitle }}</h3>
                 <div style="font-size:.78rem;color:#7FA0B8;margin-top:4px;font-family:'IBM Plex Mono',monospace">{{ skillPanelCount }}</div>
               </div>
-              <span onClick="{{ closeSkillPanel }}" style="cursor:pointer;color:#7FA0B8;font-size:1.1rem;line-height:1;padding:4px" style-hover="color:#E8B34A">✕</span>
+              <span onClick="{{ closeSkillPanel }}" style="cursor:pointer;color:#7FA0B8;font-size:1.1rem;line-height:1;padding:4px;transition:color .15s ease" style-hover="color:#E8B34A">✕</span>
             </div>
             <sc-if value="{{ skillPanelNote }}" hint-placeholder-val="{{ false }}">
               <div style="padding:10px 20px;font-size:.76rem;color:#B9CDDD;background:rgba(232,179,74,.08);border-bottom:1px solid rgba(255,255,255,.06)">{{ skillPanelNote }}</div>
@@ -326,14 +326,14 @@
       </div>
       <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
         <div style="background:#fff;border:1px solid #DCE5EC;border-radius:14px;padding:26px;box-shadow:0 2px 10px rgba(13,39,64,.07),0 12px 32px rgba(13,39,64,.06)">
-          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.15rem">🎓</div>
+          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.4rem">🎓</div>
           <h3 style="font-size:1.05rem;color:#0D2740;margin:0 0 8px">Mini MBA — International Business Management Institute (IBMI)</h3>
           <p style="font-size:.92rem;color:#4A5B6B;margin:0">Modules: Strategy, Operations, Finance, Human Resources.</p>
         </div>
         <div style="background:#fff;border:1px solid #DCE5EC;border-radius:14px;padding:26px;box-shadow:0 2px 10px rgba(13,39,64,.07),0 12px 32px rgba(13,39,64,.06)">
-          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.15rem">⚑</div>
+          <div style="width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#0D2740,#15385A);color:#E8B34A;font-size:1.4rem">👥</div>
           <h3 style="font-size:1.05rem;color:#0D2740;margin:0 0 8px">Leadership experience</h3>
-          <p style="font-size:.92rem;color:#4A5B6B;margin:0">Shift Manager at Norwegian Cruise Line — managed staff scheduling, performance evaluation, and incident reporting while coaching teams from 50+ nationalities. Today: mentoring colleagues and leading knowledge-sharing on AI-assisted instructional design at Microsoft.</p>
+          <p style="font-size:.92rem;color:#4A5B6B;margin:0">Shift Manager at Norwegian Cruise Line — managed staff scheduling, performance evaluation, and incident reporting while coaching teams from 50+ nationalities on customer-service and leadership skills.</p>
         </div>
       </div>
     </div>
@@ -346,7 +346,7 @@
         <h2 style="font-family:'Fraunces',Georgia,serif;line-height:1.15;font-size:clamp(1.6rem,3.4vw,2.2rem);color:#0D2740;margin-top:8px">Where I'm headed</h2>
       </div>
       <div style="background:#fff;border:1px solid #DCE5EC;border-radius:14px;padding:26px;box-shadow:0 2px 10px rgba(13,39,64,.07),0 12px 32px rgba(13,39,64,.06)">
-        <p style="font-size:1rem;color:#1B2733;margin:0">I'm building toward learning experiences where AI does the heavy lifting and designers do the thinking — measurable, accessible, and genuinely useful to the people taking them. I'm open to <strong>Instructional Designer</strong> and <strong>Corporate Trainer</strong> roles, remote or Europe-based, where AI-enabled L&amp;D is an ambition rather than an afterthought.</p>
+        <p style="font-size:1rem;color:#1B2733;margin:0">I'm building toward learning experiences where AI does the heavy lifting and designers do the thinking — measurable, accessible, and genuinely useful to people. Every course, every module, every assessment should move the needle on business outcomes.</p>
       </div>
     </div>
   </section>
@@ -358,10 +358,10 @@
         <h2 style="font-family:'Fraunces',Georgia,serif;color:#fff;font-size:clamp(1.5rem,3vw,2rem);margin:0 0 10px">Let's build learning that performs</h2>
         <p style="color:#B9CDDD;max-width:560px;margin:0 auto 30px">Based in Bucharest, Romania. Remote-ready across Europe. Usually replies within one business day.</p>
         <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center">
-          <a href="mailto:jacquesanamalherbe@gmail.com" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;background:#E8B34A;color:#0A1826">✉ jacquesanamalherbe@gmail.com</a>
-          <a href="tel:+40756418500" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.4);color:#fff">☎ +40 756 418 500</a>
-          <a href="https://wa.me/40756418500" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.4);color:#fff">✆ WhatsApp</a>
-          <a href="https://www.linkedin.com/in/joachim-malherbe" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.4);color:#fff">in linkedin.com/in/joachim-malherbe</a>
+          <a href="mailto:jacquesanamalherbe@gmail.com" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;background:#E8B34A;color:#0A1826;transition:all .2s ease" style-hover="transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,179,74,.3)">✉️ Email</a>
+          <a href="tel:+40756418500" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(232,179,74,.4);color:#C6D6E2;transition:all .2s ease" style-hover="border-color:#E8B34A;color:#E8B34A">📞 +40 756 418 500</a>
+          <a href="https://wa.me/40756418500" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;background:rgba(232,179,74,.12);color:#E8B34A;border:1.5px solid rgba(232,179,74,.4);transition:all .2s ease" style-hover="background:rgba(232,179,74,.2);border-color:#E8B34A">WhatsApp</a>
+          <a href="https://www.linkedin.com/in/joachim-malherbe" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;background:rgba(232,179,74,.12);color:#E8B34A;border:1.5px solid rgba(232,179,74,.4);transition:all .2s ease" style-hover="background:rgba(232,179,74,.2);border-color:#E8B34A">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -374,7 +374,7 @@
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;heroNetworkOpacity&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.3,&quot;max&quot;:1,&quot;step&quot;:0.05,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Hero network&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroNetworkOpacity&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.3,&quot;max&quot;:1,&quot;step&quot;:0.05}}">
 const CAT_COLOR = { ai: '#E8B34A', id: '#4FA6C9', tool: '#8B7FD6', pm: '#5DCAA5', other: '#7FA0B8' };
 const CAT_VARIANTS = {
   ai: ['#E8B34A', '#F2C063', '#D99A2B', '#F0C878', '#C98A22'],
